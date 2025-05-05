@@ -9,6 +9,8 @@ const RecipeCard = () => {
         height={300} //lo pone como variable tipo number
         alt="Snoopy"
       />
+      <div>Nombre de la receta</div>
+      <a>Ver más</a>
     </div>
   );
 };
