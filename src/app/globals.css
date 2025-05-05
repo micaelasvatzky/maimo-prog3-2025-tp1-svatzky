@@ -42,6 +42,11 @@ body {
   color: white;
 }
 
+.nav_container a:hover{
+  color: #DD7115;
+  cursor: pointer;
+}
+
 .hero-section {
   height: 400px;
   display: flex;
@@ -83,10 +88,41 @@ body {
   margin: 0 auto;
 }
 
-.recipe_card {
+
+.receta {
   grid-column: span 3;
+  background-color: #7c3626;
+  color: #ffcdbc;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  padding: 15px;
+  border-radius: 10px;
+  width: 300px; 
+  height: 300px; 
+}
+
+
+
+.receta img {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  padding-bottom: 5px;
+}
+
+.receta a{
+  text-decoration: none;
+  color: white;
+  background-color:#DD7115;
+  font-size: 16px;
+  padding: 0 5px;
+  margin-top: 10px;
+  border-radius: 3px;
+}
+
+.receta a:hover{
+  background-color: #2d080a;
+  cursor: pointer;
 }

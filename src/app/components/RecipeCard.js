@@ -1,16 +1,16 @@
 import Image from "next/image";
 
-const RecipeCard = () => {
+const RecipeCard = ({image,name, id}) => {
   return (
-    <div className="recipe_card">
+    <div className="receta">
       <Image
-        src="/assets/snoopy.jpg"
+        src={image}
         width={300}
         height={300} //lo pone como variable tipo number
-        alt="Snoopy"
+        alt={name}
       />
-      <div>Nombre de la receta</div>
-      <a>Ver más</a>
+      <div>{name}</div>
+      <a href={`/recipe?id=${id}`}>Ver más</a>
     </div>
   );
 };
