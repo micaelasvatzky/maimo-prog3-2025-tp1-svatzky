@@ -1,4 +1,4 @@
-import RecipeCard from "./RecipeCard";
+import RecipeCard from "@/app/components/RecipeCard";
 
 const API_URL = "https://dummyjson.com/recipes?limit=20&skip=0";
 
