@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const RecipeCard = ({image,name, id}) => {
+const RecipeCard = ({id, name, image}) => {
   return (
     <div className="receta">
       <Image
@@ -17,4 +17,4 @@ const RecipeCard = ({image,name, id}) => {
 
 export default RecipeCard;
 
-//buscar como hacer el fetch con la api para poder traer los objetos y pasar las props a las cards
+

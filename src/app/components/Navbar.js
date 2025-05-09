@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 const Navbar = () => {
+
   return (
     <div className="nav_container">
         <Image

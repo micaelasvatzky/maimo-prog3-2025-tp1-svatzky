@@ -12,9 +12,9 @@ const geistMono = Geist_Mono({
 });
 
 const kanit = Kanit({
+  variable: "--font-kanit",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"], 
-  display: "swap",
 });
 
 export const metadata = {
@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${kanit.className} antialiased`}
+        className={`${kanit.variable} ${geistMono.variable} ${geistSans.variable} antialiased`}
       >
         {children}
       </body>
