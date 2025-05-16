@@ -4,7 +4,7 @@ const HomeContainer = () => {
   return (
     <div className="home_container">
       <h2>Últimas Recetas</h2>
-        <RecipesGrid/>
+        <RecipesGrid />
     </div>
   )
 }
