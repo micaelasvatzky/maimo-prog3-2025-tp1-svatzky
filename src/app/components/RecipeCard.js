@@ -10,7 +10,7 @@ const RecipeCard = ({id, name, image}) => {
         alt={name}
       />
       <div>{name}</div>
-      <a href={`/recipe?id=${id}`}>Ver más</a>
+      <a href={`/recipe/${id}`}>Ver más</a>
     </div>
   );
 };

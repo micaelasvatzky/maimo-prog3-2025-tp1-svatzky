@@ -124,6 +124,38 @@ body {
   cursor: pointer;
 }
 
+.recetaIndividual {
+    text-align: center;
+  }
+  
+  .recetaIndividualImage {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .recetaIndividual div {
+    background-color: #7c3626;
+    color: #ffcdbc;
+    margin: 0 auto;
+    padding: 20px;
+    height: 80%;
+    border-radius: 10px;
+  }
+
+  .cookingTime{
+    font-weight: 700;
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+
+  .ingredients{
+    margin-top: 40px;
+  }
+
+
 @media screen and (max-width: 420px) {
   .nav_container {
     flex-direction: column;
