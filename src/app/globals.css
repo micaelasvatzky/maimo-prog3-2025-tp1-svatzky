@@ -182,11 +182,17 @@ button.data{
     padding: 10px 20px;
     font-size: 20px;
     font-weight: 600;
-    color: #130303;
+    color: white;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 35px;
 }
+
+button.data:hover{
+  background-color: #2d080a;
+  cursor: pointer;
+}
+
 
 @media screen and (max-width: 420px) {
   header {
