@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import Image from "next/image";
+import Link from "next/link";
 
 const RecipeContainer = ({ id }) => {
   const [data, setData] = useState([]);
@@ -39,13 +40,13 @@ const RecipeContainer = ({ id }) => {
         />
 
         <div className="boxedRecipe">
-          <h1>{data.name}</h1>
-          <h5>Preparation time: {data.prepTimeMinutes} minutes</h5>
+          <h1 className="data">{data.name}</h1>
+          <h5 className="data">Preparation time: {data.prepTimeMinutes} minutes</h5>
 
-          <h5 className="ingredients">Ingredients:</h5>
+          <h5 className="ingredients data">Ingredients:</h5>
           <p>{data.ingredients?.join(", ")}</p>
 
-          <h2>Instructions:</h2>
+          <h2 className="data">Instructions:</h2>
           <ul>
             {data.instructions?.map((instruction, index) => (
               <li key={index}>{instruction}</li>
@@ -59,8 +60,8 @@ const RecipeContainer = ({ id }) => {
           <p className="bold">Difficulty: {data.difficulty}</p>
           <p className="bold">Rating: {data.rating}</p>
 
-          <button>
-            <a href="/">Volver</a>
+          <button className="data">
+            <Link href="/">Volver</Link>
           </button>
         </div>
       </section>

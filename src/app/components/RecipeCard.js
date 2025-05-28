@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const RecipeCard = ({id, name, image}) => {
   return (
@@ -10,7 +11,7 @@ const RecipeCard = ({id, name, image}) => {
         alt={name}
       />
       <div>{name}</div>
-      <a href={`/recipe/${id}`}>Ver más</a>
+      <Link href={`/recipe/${id}`}>Ver más</Link>
     </div>
   );
 };

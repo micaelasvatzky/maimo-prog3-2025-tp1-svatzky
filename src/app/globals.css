@@ -38,8 +38,8 @@ body {
   color: white;
 }
 
-.nav_container a:hover{
-  color: #DD7115;
+.nav_container a:hover {
+  color: #dd7115;
   cursor: pointer;
 }
 
@@ -74,7 +74,6 @@ body {
   padding: 10px 30px;
   background-color: #130303;
   color: #ffcdbc;
-  margin-top: 30px;
 }
 
 .recipes_grid {
@@ -82,8 +81,8 @@ body {
   grid-template-columns: repeat(12, 1fr);
   gap: 50px;
   margin: 0 auto;
+  margin-bottom: 20px;
 }
-
 
 .receta {
   grid-column: span 3;
@@ -95,12 +94,10 @@ body {
   align-items: center;
   padding: 15px;
   border-radius: 10px;
-  width: 300px; 
-  height: 300px; 
+  width: 300px;
+  height: 300px;
   font-size: 18px;
 }
-
-
 
 .receta img {
   width: 100%;
@@ -109,54 +106,101 @@ body {
   padding-bottom: 5px;
 }
 
-.receta a{
+.receta a {
   text-decoration: none;
   color: white;
-  background-color:#DD7115;
+  background-color: #dd7115;
   font-size: 16px;
   padding: 0 5px;
   margin-top: 10px;
   border-radius: 3px;
 }
 
-.receta a:hover{
+.receta a:hover {
   background-color: #2d080a;
   cursor: pointer;
 }
 
 .recetaIndividual {
-    text-align: center;
-  }
-  
-  .recetaIndividualImage {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    display: block;
-  }
-  
-  .recetaIndividual div {
-    background-color: #7c3626;
-    color: #ffcdbc;
-    margin: 0 auto;
-    padding: 20px;
-    height: 80%;
-    border-radius: 10px;
-  }
+  text-align: center;
+}
 
-  .cookingTime{
-    font-weight: 700;
-    font-size: 22px;
-    margin-top: 0;
-    margin-bottom: 40px;
-  }
+.recetaIndividualImage {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
 
-  .ingredients{
-    margin-top: 40px;
-  }
+.recetaIndividual div {
+  background-color: #7c3626;
+  color: #ffcdbc;
+  padding: 20px;
+  height: 100%;
+  border-radius: 10px;
+}
 
+.cookingTime {
+  font-weight: 700;
+  font-size: 22px;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.ingredients {
+  margin-top: 40px;
+}
+
+.bold {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+h1.data{
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 5px;
+}
+
+h2.data{
+  font-size: 24px;
+  line-height: 28px;
+  font-weight:600;
+  margin-top: 20px;
+}
+
+h5.data{
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+}
+
+button.data{
+    background-color: #DD7115;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #130303;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 35px;
+}
 
 @media screen and (max-width: 420px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    text-align: center;
+  }
+
+  header ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
   .nav_container {
     flex-direction: column;
     gap: 10px;
