@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import RecipeCard from "@/app/components/RecipeCard";
 import axios from "axios";
+import Loading from "@/app/components/Loading";
 
 const RecipesGrid = () => {
   const [data, setData] = useState([]);
@@ -35,7 +36,7 @@ const RecipesGrid = () => {
           <RecipeCard key={id} id={id} name={name} image={image} />
         ))}
 
-      {loading && "Loading..."}
+      {loading && <Loading />}
 
       {error && "HUBO UN ERROR"}
     </div>

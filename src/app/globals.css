@@ -193,6 +193,19 @@ button.data:hover{
   cursor: pointer;
 }
 
+svg{
+  width: 200px;
+  height: auto;
+}
+
+.svg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  grid-column: 1 / -1;
+}
 
 @media screen and (max-width: 420px) {
   header {

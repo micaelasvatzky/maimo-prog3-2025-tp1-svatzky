@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Navbar = () => {
 
@@ -13,13 +14,13 @@ const Navbar = () => {
       <nav >
         <ul>
           <li>
-            <a href="#">Home</a>
+            <Link href="/">Home</Link>
           </li>
           <li>
-            <a href="#">About</a>
+            <Link href="#">About</Link>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <Link href="#">Contact</Link>
           </li>
         </ul>
       </nav>
